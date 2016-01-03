@@ -1,4 +1,4 @@
-import sqlite3
+import sqlite3,os
 from flask import *
 import traceback
 
@@ -189,6 +189,7 @@ def remove(post_id):
 	return redirect(url_for('show_entries'))	
 
 
+
 if __name__ == '__main__':
 	port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+	app.run(host='0.0.0.0', port=port)
