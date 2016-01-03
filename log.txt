@@ -1,0 +1,80 @@
+2016-01-03T08:06:17.235203+00:00 heroku[api]: Enable Logplex by piyush14agarwal@hotmail.com
+2016-01-03T08:06:17.235243+00:00 heroku[api]: Release v2 created by piyush14agarwal@hotmail.com
+2016-01-03T08:07:56.062037+00:00 heroku[api]: Scale to web=1 by piyush14agarwal@hotmail.com
+2016-01-03T08:07:56.140200+00:00 heroku[api]: Deploy aab4250 by piyush14agarwal@hotmail.com
+2016-01-03T08:07:56.140200+00:00 heroku[api]: Release v3 created by piyush14agarwal@hotmail.com
+2016-01-03T08:07:56.454587+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-03T08:07:56.454597+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-01-03T08:07:58.393087+00:00 heroku[web.1]: Starting process with command `python main_application.py`
+2016-01-03T08:07:59.529947+00:00 app[web.1]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2016-01-03T08:08:58.552678+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-01-03T08:08:58.552678+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-01-03T08:08:59.248216+00:00 heroku[web.1]: Process exited with status 137
+2016-01-03T08:08:59.327499+00:00 heroku[web.1]: State changed from starting to crashed
+2016-01-03T08:08:59.328658+00:00 heroku[web.1]: State changed from crashed to starting
+2016-01-03T08:09:02.230436+00:00 heroku[web.1]: Starting process with command `python main_application.py`
+2016-01-03T08:09:04.617649+00:00 app[web.1]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2016-01-03T08:09:26.538988+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=8d9ec396-3928-4934-bb24-6ea1552562e4 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:10:02.273873+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-01-03T08:10:02.273873+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-01-03T08:10:03.347449+00:00 heroku[web.1]: Process exited with status 137
+2016-01-03T08:10:05.488100+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=80e213d7-5ae6-4e70-9e56-beb08e749baf fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:10:03.367305+00:00 heroku[web.1]: State changed from starting to crashed
+2016-01-03T08:10:50.756131+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=f6d1ff31-3de7-4fba-ab4e-ab2876970baa fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:10:52.631637+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=6531fb60-2cbb-4869-b867-9b7d8f62e00d fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:11:27.746938+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=10c44c7c-9494-4729-8e43-e2e9caa486d0 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:11:28.682125+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=4cc81dfc-6186-4583-ac49-8bdacb5e9b6c fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:11:53.907282+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=7a39a446-c03e-4ac1-80e8-cfbfda35e817 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:11:54.740534+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=c4539fb4-5da7-4808-95e9-88568909b4e7 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:14:08.944639+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=8f03eddb-50a9-4857-965a-afa2bb8be92b fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:14:09.882860+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=2f06d828-4c67-4d77-9c38-3382af8ecc98 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:22:32.764492+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-03T08:22:32.764502+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-01-03T08:22:32.634771+00:00 heroku[api]: Deploy 1bfc7f3 by piyush14agarwal@hotmail.com
+2016-01-03T08:22:32.634771+00:00 heroku[api]: Release v4 created by piyush14agarwal@hotmail.com
+2016-01-03T08:22:32.852952+00:00 heroku[web.1]: State changed from crashed to starting
+2016-01-03T08:22:34.904531+00:00 heroku[web.1]: Starting process with command `python main_application.py`
+2016-01-03T08:22:35.961985+00:00 app[web.1]:   File "main_application.py", line 194
+2016-01-03T08:22:35.962004+00:00 app[web.1]:     app.run(host='0.0.0.0', port=port)
+2016-01-03T08:22:35.962035+00:00 app[web.1]:                                      ^
+2016-01-03T08:22:35.962059+00:00 app[web.1]: IndentationError: unindent does not match any outer indentation level
+2016-01-03T08:22:36.487735+00:00 heroku[web.1]: Process exited with status 1
+2016-01-03T08:22:38.626692+00:00 heroku[web.1]: Starting process with command `python main_application.py`
+2016-01-03T08:22:39.864201+00:00 app[web.1]:   File "main_application.py", line 194
+2016-01-03T08:22:39.864224+00:00 app[web.1]:     app.run(host='0.0.0.0', port=port)
+2016-01-03T08:22:39.864225+00:00 app[web.1]:                                      ^
+2016-01-03T08:22:39.864229+00:00 app[web.1]: IndentationError: unindent does not match any outer indentation level
+2016-01-03T08:22:40.383556+00:00 heroku[web.1]: State changed from starting to crashed
+2016-01-03T08:22:40.376830+00:00 heroku[web.1]: Process exited with status 1
+2016-01-03T08:22:36.572169+00:00 heroku[web.1]: State changed from starting to crashed
+2016-01-03T08:22:36.573388+00:00 heroku[web.1]: State changed from crashed to starting
+2016-01-03T08:24:20.435982+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=120d8066-6b98-4540-bff0-d0804caec243 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:24:21.477905+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=e6ddacbf-b506-44bf-a964-24066bacc801 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:25:22.068361+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=bd864576-4003-426a-a66b-5e1a47bbbb9f fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:25:22.969499+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=c324ebf8-2d59-454f-81aa-6a583d5059ab fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:26:29.063025+00:00 heroku[api]: Starting process with command `console` by piyush14agarwal@hotmail.com
+2016-01-03T08:26:31.869642+00:00 heroku[run.2342]: Starting process with command `console`
+2016-01-03T08:26:31.775198+00:00 heroku[run.2342]: Awaiting client
+2016-01-03T08:26:34.188763+00:00 heroku[run.2342]: Process exited with status 127
+2016-01-03T08:26:34.197431+00:00 heroku[run.2342]: State changed from up to complete
+2016-01-03T08:26:32.292026+00:00 heroku[run.2342]: State changed from starting to up
+2016-01-03T08:26:45.311836+00:00 heroku[api]: Starting process with command `python` by piyush14agarwal@hotmail.com
+2016-01-03T08:26:47.783116+00:00 heroku[run.2732]: Awaiting client
+2016-01-03T08:26:47.815081+00:00 heroku[run.2732]: Starting process with command `python`
+2016-01-03T08:26:48.182249+00:00 heroku[run.2732]: State changed from starting to up
+2016-01-03T08:27:03.622636+00:00 heroku[run.2732]: Process exited with status 0
+2016-01-03T08:27:03.612585+00:00 heroku[run.2732]: State changed from up to complete
+2016-01-03T08:35:06.794422+00:00 heroku[api]: Deploy 2163edf by piyush14agarwal@hotmail.com
+2016-01-03T08:35:06.794422+00:00 heroku[api]: Release v5 created by piyush14agarwal@hotmail.com
+2016-01-03T08:35:06.961657+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-03T08:35:06.961667+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-01-03T08:35:07.090709+00:00 heroku[web.1]: State changed from crashed to starting
+2016-01-03T08:35:09.389341+00:00 heroku[web.1]: Starting process with command `python main_application.py`
+2016-01-03T08:35:11.966282+00:00 app[web.1]:  * Running on http://0.0.0.0:56579/ (Press CTRL+C to quit)
+2016-01-03T08:35:13.143798+00:00 heroku[web.1]: State changed from starting to up
+2016-01-03T08:35:51.964133+00:00 heroku[router]: at=info method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=5d301a3e-38fb-441a-87d1-d67881deda8c fwd="103.192.118.120" dyno=web.1 connect=0ms service=41ms status=500 bytes=451
+2016-01-03T08:35:51.939517+00:00 app[web.1]: 10.203.223.3 - - [03/Jan/2016 08:35:51] "GET / HTTP/1.1" 500 -
+2016-01-03T08:35:52.551154+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=78d8eea4-93da-4638-b6bd-0d435e7af9c0 fwd="103.192.118.120" dyno=web.1 connect=0ms service=3ms status=404 bytes=381
+2016-01-03T08:35:52.526496+00:00 app[web.1]: 10.203.223.3 - - [03/Jan/2016 08:35:52] "GET /favicon.ico HTTP/1.1" 404 -
+2016-01-03T08:36:38.043046+00:00 app[web.1]: 10.203.223.3 - - [03/Jan/2016 08:36:38] "GET / HTTP/1.1" 500 -
+2016-01-03T08:36:38.067549+00:00 heroku[router]: at=info method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=95a01c00-24d5-4221-98d9-05bef0e5eb75 fwd="103.192.118.120" dyno=web.1 connect=1ms service=4ms status=500 bytes=451

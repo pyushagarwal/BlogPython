@@ -54,6 +54,7 @@ def before_request():
 
 @app.route('/')
 def show_entries():
+	return 'Home'
 	cur = g.db.execute("""select entries.id,heading,detail,users.username,likes from entries inner join users on users.uid = entries.uid  order by entries.id desc""")
 	entries_tuple =  cur.fetchall() #list of tuples
 	entries_list = list()
