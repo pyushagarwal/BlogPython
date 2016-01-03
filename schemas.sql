@@ -25,5 +25,3 @@ create table likes(
 	Foreign Key(post_id) references entries(id),
 	unique(uid,post_id)
 	);
-insert into likes values(1,5);
-insert into likes values(2,4);
