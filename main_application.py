@@ -55,9 +55,11 @@ def before_request():
 @app.route('/')
 def show_entries():
 	print 'Sample\n'
-	cur = g.db.execute("""select entries.id,heading,detail,users.username,likes from entries inner join users on users.uid = entries.uid  order by entries.id desc""")
-	
-	return 'database fetched'
+	try:
+		cur = g.db.execute("""select entries.id,heading,detail,users.username,likes from entries inner join users on users.uid = entries.uid  order by entries.id desc""")
+	except Exception:
+		print str(traceback.format_exc())
+
 	entries_tuple =  cur.fetchall() #list of tuples
 	entries_list = list()
 	for post_id,heading,detail,username,likes in entries_tuple:
