@@ -78,3 +78,15 @@
 2016-01-03T08:35:52.526496+00:00 app[web.1]: 10.203.223.3 - - [03/Jan/2016 08:35:52] "GET /favicon.ico HTTP/1.1" 404 -
 2016-01-03T08:36:38.043046+00:00 app[web.1]: 10.203.223.3 - - [03/Jan/2016 08:36:38] "GET / HTTP/1.1" 500 -
 2016-01-03T08:36:38.067549+00:00 heroku[router]: at=info method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=95a01c00-24d5-4221-98d9-05bef0e5eb75 fwd="103.192.118.120" dyno=web.1 connect=1ms service=4ms status=500 bytes=451
+2016-01-03T08:40:18.125323+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-03T08:40:18.125344+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-01-03T08:40:17.998106+00:00 heroku[api]: Deploy d4a5fa7 by piyush14agarwal@hotmail.com
+2016-01-03T08:40:17.998106+00:00 heroku[api]: Release v6 created by piyush14agarwal@hotmail.com
+2016-01-03T08:40:20.287378+00:00 heroku[web.1]: Starting process with command `python main_application.py`
+2016-01-03T08:40:22.224021+00:00 app[web.1]:  * Running on http://0.0.0.0:9791/ (Press CTRL+C to quit)
+2016-01-03T08:40:22.790243+00:00 heroku[web.1]: State changed from starting to up
+2016-01-03T08:40:23.569675+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-01-03T08:40:18.132691+00:00 heroku[web.1]: State changed from up to starting
+2016-01-03T08:40:26.239943+00:00 heroku[web.1]: Process exited with status 143
+2016-01-03T08:40:37.482940+00:00 heroku[router]: at=info method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=c9df081a-aba3-4a0a-b3d9-3ba069666db7 fwd="103.192.118.120" dyno=web.1 connect=0ms service=3ms status=200 bytes=158
+2016-01-03T08:40:37.462544+00:00 app[web.1]: 10.231.221.183 - - [03/Jan/2016 08:40:37] "GET / HTTP/1.1" 200 -
