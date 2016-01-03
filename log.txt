@@ -1,0 +1,30 @@
+2016-01-03T08:06:17.235203+00:00 heroku[api]: Enable Logplex by piyush14agarwal@hotmail.com
+2016-01-03T08:06:17.235243+00:00 heroku[api]: Release v2 created by piyush14agarwal@hotmail.com
+2016-01-03T08:07:56.062037+00:00 heroku[api]: Scale to web=1 by piyush14agarwal@hotmail.com
+2016-01-03T08:07:56.140200+00:00 heroku[api]: Deploy aab4250 by piyush14agarwal@hotmail.com
+2016-01-03T08:07:56.140200+00:00 heroku[api]: Release v3 created by piyush14agarwal@hotmail.com
+2016-01-03T08:07:56.454587+00:00 heroku[slug-compiler]: Slug compilation started
+2016-01-03T08:07:56.454597+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-01-03T08:07:58.393087+00:00 heroku[web.1]: Starting process with command `python main_application.py`
+2016-01-03T08:07:59.529947+00:00 app[web.1]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2016-01-03T08:08:58.552678+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-01-03T08:08:58.552678+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-01-03T08:08:59.248216+00:00 heroku[web.1]: Process exited with status 137
+2016-01-03T08:08:59.327499+00:00 heroku[web.1]: State changed from starting to crashed
+2016-01-03T08:08:59.328658+00:00 heroku[web.1]: State changed from crashed to starting
+2016-01-03T08:09:02.230436+00:00 heroku[web.1]: Starting process with command `python main_application.py`
+2016-01-03T08:09:04.617649+00:00 app[web.1]:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2016-01-03T08:09:26.538988+00:00 heroku[router]: at=error code=H20 desc="App boot timeout" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=8d9ec396-3928-4934-bb24-6ea1552562e4 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:10:02.273873+00:00 heroku[web.1]: Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+2016-01-03T08:10:02.273873+00:00 heroku[web.1]: Stopping process with SIGKILL
+2016-01-03T08:10:03.347449+00:00 heroku[web.1]: Process exited with status 137
+2016-01-03T08:10:05.488100+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=80e213d7-5ae6-4e70-9e56-beb08e749baf fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:10:03.367305+00:00 heroku[web.1]: State changed from starting to crashed
+2016-01-03T08:10:50.756131+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=f6d1ff31-3de7-4fba-ab4e-ab2876970baa fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:10:52.631637+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=6531fb60-2cbb-4869-b867-9b7d8f62e00d fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:11:27.746938+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=10c44c7c-9494-4729-8e43-e2e9caa486d0 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:11:28.682125+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=4cc81dfc-6186-4583-ac49-8bdacb5e9b6c fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:11:53.907282+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=7a39a446-c03e-4ac1-80e8-cfbfda35e817 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:11:54.740534+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=c4539fb4-5da7-4808-95e9-88568909b4e7 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:14:08.944639+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=powerful-depths-4697.herokuapp.com request_id=8f03eddb-50a9-4857-965a-afa2bb8be92b fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
+2016-01-03T08:14:09.882860+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=powerful-depths-4697.herokuapp.com request_id=2f06d828-4c67-4d77-9c38-3382af8ecc98 fwd="103.192.118.120" dyno= connect= service= status=503 bytes=
