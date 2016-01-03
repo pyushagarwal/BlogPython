@@ -58,8 +58,8 @@ def show_entries():
 	try:
 		cur = g.db.execute("""select entries.id,heading,detail,users.username,likes from entries inner join users on users.uid = entries.uid  order by entries.id desc""")
 	except Exception:
-		print str(traceback.format_exc())
-
+		return str(traceback.format_exc())
+	return 'success'	
 	entries_tuple =  cur.fetchall() #list of tuples
 	entries_list = list()
 	for post_id,heading,detail,username,likes in entries_tuple:
