@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block body %}
+	<form name="register_form" action="{{ url_for('register') }}" method="POST" onsubmit="return submit_form()" class = "form-horizontal">
+		<div class="form-group">
+   			 <label class="control-label col-sm-2" for="username">Username:</label>
+   		 	<div class="col-sm-6">
+      			<input type="text" class="form-control" id="username" placeholder="username" name = "username">
+    		</div>
+    		<div class="col-sm-4" id ="username_check_msg">
+			{% if error_on_register %}
+		   	{{error_on_register}}
+		   	{% endif %}
+    		</div>
+    	</div>
+    	<div class="form-group">
+   			 <label class="control-label col-sm-2" for="one_password">Password:</label>
+   		 	<div class="col-sm-6">
+      			<input type="password" class="form-control" id="one_password" placeholder="" name = "one_password">
+    		</div>
+    	</div>
+
+    	<div class="form-group">
+   			 <label class="control-label col-sm-2" for="two_password">Confirm Password:</label>
+   		 	<div class="col-sm-6">
+      			<input type="password" class="form-control" id="two_password" placeholder="" name = "password">
+    		</div>
+    		<div class="col-sm-4" id ="password_check_msg">
+
+    		</div>
+    	</div>
+		<div class="form-group"> 
+    		<div class="col-sm-offset-2 col-sm-10">
+    			  <input type="submit" class="btn btn-default" value="Register"/>
+  		  	</div>
+  		</div>
+	</form>
+
+<script>
+	function submit_form()
+	{
+		var x = document.forms["register_form"]["one_password"].value;
+		var y = document.forms["register_form"]["password"].value;
+		var username = document.forms["register_form"]["username"].value;
+		if(username.localeCompare('') == 0 )
+		{
+			document.getElementById("username_check_msg").innerHTML="Username field empty";
+			return false;
+		}
+		if(x.localeCompare('') == 0 )
+		{
+			document.getElementById("password_check_msg").innerHTML="Password field empty";
+			return false;
+		}
+		if(x.localeCompare(y) == 0)
+			return true;
+		else
+			document.getElementById("password_check_msg").innerHTML="Password mismatch";
+		return false;
+	}
+</script>
+{% endblock %}

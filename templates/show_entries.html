@@ -1,49 +1,74 @@
 {% extends "layout.html" %}
-{% block body %}
+
+
+{% block head %}
 	{% if session.logged_in %}
-	<a href="{{url_for('logout')}}">Logout</a>
-	<form action="{{ url_for('add_entry') }}" method=post class=add-entry>
-      <dl>
-        <dt>Heading:
-        <dd><input type=text size=30 name=heading>
-        <dt>Detail:
-        <dd><textarea name=detail rows=5 cols=40></textarea>
-        <dd><input type=submit value=Share>
-      </dl>
-    </form>
+	<div class = "col-sm-4">{{session['username']}}</div>
+    <div class = "col-sm-4" ><a href="{{url_for('logout')}}">Logout</a></div>
     {% else %}
-    <a href="{{url_for('login')}}">Login</a>
+	<div class = "col-sm-4"> <a href="{{url_for('login')}}">Login</a></div>
+    <div class = "col-sm-4" ><a href="{{url_for('register')}}">Register</a></div>
+    {% endif %}
+
+{% endblock %}
+
+{% block body %}
+
+	{% if session.logged_in %}
+	<form action="{{ url_for('add_entry') }}" method=post class= "form-horizontal" >
+  	  	<div class="form-group">
+   			 <label class="control-label col-sm-2" for="email">Heading:</label>
+   		 	<div class="col-sm-8">
+      			<input type="text" class="form-control" id="email" placeholder="Heading" name = "heading">
+    		</div>
+    	</div>
+    	<div class="form-group">
+   			 <label class="control-label col-sm-2" for="email">Detail:</label>
+   		 	<div class="col-sm-8">
+      			<textarea name=detail rows=5 type="email" class="form-control" id="email" name = "heading"></textarea>
+    		</div>
+    	</div>
+    	<div class="form-group"> 
+    		<div class="col-sm-offset-2 col-sm-10">
+    			  <input type="submit" class="btn btn-default" value="Share">
+  		  	</div>
+  		</div>
+  		&nbsp
+    </form>
     {% endif %} 
-	<ul class = "list-group" >
-	{% for entry  in entries %}
-		<li class="list-group-item">
-			<b>{{entry.heading}}</b>
-			<span class="badge">{{entry.username}}</span>
-			</br></br>
-			<pre >{{entry.detail}}</pre>
-			</br>
-			<div class="row">
-				{% if session.username == entry.username %}
-				<div class="col-sm-1">
-					<b> <a href="{{url_for('edit_entry',post_id= entry.post_id )}}">Edit</a></b>
-				</div>
-				<div class="col-sm-2"><a  href="{{url_for('remove',post_id= entry.post_id )}}">Remove</a></div>
-				{% endif %}
-				<div class="col-sm-3" >
-				{% if entry.liked == 0 %}
-					<a  href="like/{{entry.post_id}}">Like {{entry.likes}}</a>
-				{% elif entry.liked == 1 %}	
-					<a  href="like/{{entry.post_id}}">Unlike  {{entry.likes}}</a>
-				{% else %}
-					Likes  &nbsp {{entry.likes}}
-				{% endif %}
-				</div>
-				<div class="col-sm-6" style="text-align:right;">
-				
-				</div>
-			</div>	
-			<br>
-		</li>
-	{% endfor %}
-	</ul>
+		
+    <div class="row posts_list">
+	    <ul class = "list-group" >
+		{% for entry  in entries %}
+			<li class="list-group-item">
+				<b>{{entry.heading}}</b>
+				<span class="badge">{{entry.username}}</span>
+				</br></br>
+				<pre >{{entry.detail}}</pre>
+				</br>
+				<div class="row">
+					{% if session.username == entry.username %}
+					<div class="col-sm-1">
+						<b> <a href="{{url_for('edit_entry',post_id= entry.post_id )}}">Edit</a></b>
+					</div>
+					<div class="col-sm-2"><a  href="{{url_for('remove',post_id= entry.post_id )}}">Remove</a></div>
+					{% endif %}
+					<div class="col-sm-3" >
+					{% if entry.liked == 0 %}
+						<a  href="like/{{entry.post_id}}">Like {{entry.likes}}</a>
+					{% elif entry.liked == 1 %}	
+						<a  href="like/{{entry.post_id}}">Unlike  {{entry.likes}}</a>
+					{% else %}
+						Likes  &nbsp {{entry.likes}}
+					{% endif %}
+					</div>
+					<div class="col-sm-6" style="text-align:right;">
+					
+					</div>
+				</div>	
+				<br>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
 {% endblock %}

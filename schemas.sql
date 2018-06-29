@@ -13,6 +13,7 @@ create table entries(
 	heading text not null,
 	detail text not null,
 	uid integer not null,
+	likes integer default '0',
 	Foreign Key(uid) references users(uid) 
 	);
 

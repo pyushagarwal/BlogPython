@@ -1,13 +1,28 @@
 <!doctype html>
 <title>Sample Blog</title>
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="{{url_for('static', filename = 'bootstrap-3.3.6-dist/css/bootstrap.min.css')}}">
+
+<script type = "text/javascript" src = "{{url_for('static', filename = 'bootstrap-3.3.6-dist/js/bootstrap.min.js')}}">
+</script>
 
 <div class=page>
+  <div class="page-heading" >
+       <div class = "col-sm-8">   <h3>Blog</h3></div>
+        <div class = "col-sm-4">
+          </br>
+          <div class = "col-sm-4"><a href="{{url_for('show_entries')}}">Home</a></div>
+          {% block head %}
+          {% endblock %}
+        </div>
+  </div>
+  </br>
+  </br>
+  </br>
   {% if error %}
-  <h1> {{error}} </h1>
+   <h1> {{error}} </h1>
   {% endif %}
   {% block body %}{% endblock %}
 </div>

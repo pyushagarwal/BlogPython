@@ -1,9 +1,10 @@
 import sqlite3,os
 from flask import *
 import traceback
+import requests
 
 #Configuration
-DATABASE = '.\\tmp\\database.txt'
+DATABASE = 'database.db'
 DEBUG = False
 USERNAME = 'piyush'
 PASSWORD = '1234'
@@ -59,6 +60,7 @@ def show_entries():
 		cur = g.db.execute("""select entries.id,heading,detail,users.username,likes from entries inner join users on users.uid = entries.uid  order by entries.id desc""")
 	except Exception:
 		return str(traceback.format_exc())
+	print(type(cur))
 	entries_tuple =  cur.fetchall() #list of tuples
 	entries_list = list()
 	for post_id,heading,detail,username,likes in entries_tuple:
@@ -99,7 +101,7 @@ def login():
 		print 'username: ', t_username, 'password: ', t_password
 		try:
 			result_query = g.db.execute(""" select uid from users  where username = ? and password=? 
-				""", [t_username, t_password])
+				""", [t_username.lower(), t_password])
 		except Exception:
 			print 'database check exception'
 			print traceback.format_exc()
@@ -114,7 +116,7 @@ def login():
 		else :
 			error_on_login = 'Wrong username or password'
 			print error_on_login
-			return render_template('login.html', error = error_on_login)
+			return render_template('login.html', error_on_login = error_on_login)
 	else:
 		return render_template('login.html')	
 
@@ -194,6 +196,22 @@ def remove(post_id):
 
 
 
+@app.route('/register',methods=['GET','POST'])
+def register():
+	if 'logged_in' in session:
+		return redirect(url_for('show_entries'))
+	if request.method == 'GET':
+		return render_template('register.html')
+	# post request
+	try:
+		g.db.execute('insert into users(username,password) values(?,?)' , [request.form['username'], request.form['password']] )
+		g.db.commit()
+	except:
+		error_on_register=  'username not available'
+		return render_template('register.html', error_on_register = error_on_register)
+
+	return redirect(url_for('login'),code =307)	
+
 if __name__ == '__main__':
-	port = int(os.environ.get("PORT", 5000))
-	app.run(host='0.0.0.0', port=port)
+	port = int(os.environ.get("PORT", 5001))
+	app.run(host='127.0.0.1', port=port)
