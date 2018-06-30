@@ -13,15 +13,25 @@ This application provides the following functionalities:
  - Uses the Flask jinja2 template engine for rendering HTML pages
  
 ### Installation
- - Install the python libraries mentioned in requirements.txt
- - Execute the script db_intialise.py. This file creates the necessary tables. The schema of the above database is listed in schemas.sql. The name of database file is database.db
- - Pass the port number as an environment variable. The default port is 5001.
- - Execute the script main_application.py
+ ```sh
+ pip install -r requirements.txt
+ ```
+ ```sh
+ python db_intialise.py
+ ```
+ - The above command creates the necessary tables. The schema of the above database is listed in schemas.sql. The name of database file is database.db
+ ```sh
+ export PORT=<port_number>
+ ```
+ - This sets the port number. The default port is 5001.
+ ```sh
+ python main_application.py
+ ```
  
 ### Screenshots
 
 <div>
-<img src="Screenshots/Home.png" alt="drawing" height="400"/>
+<img src="Screenshots/Home.png" alt="drawing" height="600"/>
  <br>
 <img src="Screenshots/Edit_posts.png" alt="drawing" height="400"/>
 
