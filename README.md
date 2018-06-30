@@ -18,3 +18,12 @@ This application provides the following functionalities:
  - Pass the port number as an environment variable. The default port is 5001.
  - Execute the script main_application.py
  
+### Screenshots
+
+<div>
+<img src="Screenshots/Home.png" alt="drawing" height="400"/>
+ <br>
+<img src="Screenshots/Edit_posts.png" alt="drawing" height="400"/>
+
+<img src="Screenshots/Register.png" alt="drawing" height="400"/>
+<div>
